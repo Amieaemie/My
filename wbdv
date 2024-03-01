@@ -1,0 +1,106 @@
+dat.html(filename)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="sstyle.css">
+</head>
+
+<body>
+	<div class="meh">
+		<h1>LOGIN</h1>
+      <hr>
+      
+		<form action="">
+			<label for="Email"> Email: </label>
+         
+			<input type="Email" placeholder="Enter your Email" required>
+
+			<label for="password"> Password: </label>
+         
+			<input type="password"
+			id="password"
+			name="password"
+			placeholder="Enter your Password" required>
+
+			<div class="hey">
+				<button type="Login" onclick="solve()"> LOGIN </button>
+			</div>
+		</form>
+		<p>Not registered?</p>
+	</div>
+</body>
+</html>
+
+
+sstyle.css(filename)
+h1 {
+	color: Red;
+}
+p {
+font-size: 20px ;
+}
+    
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	background: LightGray;
+	flex-direction: column;
+	margin: 0;
+}
+
+.meh {
+	background-color:white;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	padding: 10px 20px;
+	transition: transform 0.2s;
+	width: 1000px;
+    height: 500px;
+	text-align: center;
+}
+
+
+.hey {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+label {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: left;
+	color: #555;
+	font-weight: bold;
+}
+
+
+input {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+button {
+	padding: 15px;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	background-color: Red;
+	width: 100%;
+	font-size: 16px;
+}
